@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Fake Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="container">
+            <h1>🛍️ Mi Tienda Online</h1>
+            <div class="carrito-header">
+                <button id="btn-carrito">
+                    🛒 Carrito (<span id="contador-carrito">0</span>)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        
+        <!-- LOADER (mientras carga) -->
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p>Cargando productos...</p>
+        </div>
+
+        <!-- CATÁLOGO DE PRODUCTOS -->
+        <div id="catalogo" class="catalogo">
+            <!-- Los productos se cargarán aquí con JavaScript -->
+        </div>
+
+    </div>
+
+    <!-- MODAL DEL CARRITO -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>🛒 Tu Carrito de Compras</h2>
+            <div id="items-carrito"></div>
+            <div class="total-carrito">
+                <h3>Total: $<span id="total-carrito">0.00</span></h3>
+            </div>
+            <button class="btn-finalizar">Finalizar Compra</button>
+            <button class="btn-vaciar">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
